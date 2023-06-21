@@ -1,14 +1,13 @@
-[debug] [2023-06-21T09:57:55.619Z] ----------------------------------------------------------------------
-[debug] [2023-06-21T09:57:55.625Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2023-06-21T09:57:55.626Z] CLI Version:   12.3.1
-[debug] [2023-06-21T09:57:55.627Z] Platform:      win32
-[debug] [2023-06-21T09:57:55.627Z] Node Version:  v20.1.0
-[debug] [2023-06-21T09:57:55.627Z] Time:          Wed Jun 21 2023 10:57:55 GMT+0100 (West Africa Standard Time)
-[debug] [2023-06-21T09:57:55.628Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T11:14:37.922Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T11:14:37.926Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-21T11:14:37.926Z] CLI Version:   12.3.1
+[debug] [2023-06-21T11:14:37.926Z] Platform:      win32
+[debug] [2023-06-21T11:14:37.927Z] Node Version:  v20.1.0
+[debug] [2023-06-21T11:14:37.927Z] Time:          Wed Jun 21 2023 12:14:37 GMT+0100 (West Africa Standard Time)
+[debug] [2023-06-21T11:14:37.927Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-06-21T09:57:55.635Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2023-06-21T09:57:55.789Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-06-21T09:57:55.790Z] > authorizing via signed-in user (sarumiatinuke2020@gmail.com)
+[debug] [2023-06-21T11:14:37.937Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-21T11:14:37.937Z] > authorizing via signed-in user (sarumiatinuke2020@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -20,8 +19,6 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\lenovo\multimedia-app
 
-[debug] [2023-06-21T09:57:58.576Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2023-06-21T09:57:58.577Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
 [info] 
 === Project Setup
 [info] 
@@ -30,34 +27,31 @@ You're about to initialize a Firebase project in this directory:
 [info] but for now we'll just set up a default project.
 [info] 
 [info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
-[debug] [2023-06-21T09:59:40.825Z] > refreshing access token with scopes: []
-[debug] [2023-06-21T09:59:40.828Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2023-06-21T09:59:40.828Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2023-06-21T09:59:45.428Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
-
-For CI servers and headless environments, generate a new token with firebase login:ci
-    at invalidCredentialError (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
-    at refreshTokens (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+[debug] [2023-06-21T11:15:13.010Z] > refreshing access token with scopes: []
+[debug] [2023-06-21T11:15:13.013Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-21T11:15:13.013Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-21T11:15:13.694Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-21T11:15:13.695Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-21T11:15:13.729Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-21T11:15:13.730Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"Muslimah-multimedia-app","name":"Muslimah-multimedia-app"}
+[debug] [2023-06-21T11:15:14.959Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2023-06-21T11:15:14.960Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2023-06-21T11:15:15.509Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Client.getAccessToken (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
-    at async Client.addAuthHeader (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
-    at async Client.request (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
-    at async createCloudProject (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:180:26)
-    at async createFirebaseProjectAndLog (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
-    at async promptAndCreateNewProject (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
-    at async doSetup (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
 [error] 
 [error] Error: Failed to create project. See firebase-debug.log for more info.
-[debug] [2023-06-21T10:00:16.141Z] ----------------------------------------------------------------------
-[debug] [2023-06-21T10:00:16.147Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2023-06-21T10:00:16.148Z] CLI Version:   12.3.1
-[debug] [2023-06-21T10:00:16.148Z] Platform:      win32
-[debug] [2023-06-21T10:00:16.148Z] Node Version:  v20.1.0
-[debug] [2023-06-21T10:00:16.149Z] Time:          Wed Jun 21 2023 11:00:16 GMT+0100 (West Africa Standard Time)
-[debug] [2023-06-21T10:00:16.149Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T11:20:13.095Z] ----------------------------------------------------------------------
+[debug] [2023-06-21T11:20:13.102Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-06-21T11:20:13.103Z] CLI Version:   12.3.1
+[debug] [2023-06-21T11:20:13.103Z] Platform:      win32
+[debug] [2023-06-21T11:20:13.104Z] Node Version:  v20.1.0
+[debug] [2023-06-21T11:20:13.104Z] Time:          Wed Jun 21 2023 12:20:13 GMT+0100 (West Africa Standard Time)
+[debug] [2023-06-21T11:20:13.104Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-06-21T10:00:16.161Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-06-21T10:00:16.161Z] > authorizing via signed-in user (sarumiatinuke2020@gmail.com)
+[debug] [2023-06-21T11:20:13.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-21T11:20:13.123Z] > authorizing via signed-in user (sarumiatinuke2020@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -77,21 +71,10 @@ You're about to initialize a Firebase project in this directory:
 [info] but for now we'll just set up a default project.
 [info] 
 [info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
-[debug] [2023-06-21T10:00:52.954Z] > refreshing access token with scopes: []
-[debug] [2023-06-21T10:00:52.963Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2023-06-21T10:00:52.963Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2023-06-21T10:00:56.699Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
-
-For CI servers and headless environments, generate a new token with firebase login:ci
-    at invalidCredentialError (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
-    at refreshTokens (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+[debug] [2023-06-21T11:20:50.431Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-06-21T11:20:50.431Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"muslimah-mulitmedia-app","name":"muslimah-multimedia-app"}
+[debug] [2023-06-21T11:20:53.106Z] FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects
+    at RetryOperation._fn (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:242:31)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Client.getAccessToken (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
-    at async Client.addAuthHeader (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
-    at async Client.request (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
-    at async createCloudProject (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:180:26)
-    at async createFirebaseProjectAndLog (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
-    at async promptAndCreateNewProject (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
-    at async doSetup (C:\Users\lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
 [error] 
 [error] Error: Failed to create project. See firebase-debug.log for more info.

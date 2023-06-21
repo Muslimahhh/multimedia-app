@@ -117,6 +117,18 @@ export default function App() {
      </div>
      <div style={styles.fileContainer}>
      <div style={styles.controlTools}>
+              <button
+              style={styles.controlButton}
+              onClick={() => {
+                if (selectedFile) {
+                  const newFiles = myFiles.filter(file => file.id !== selectedFile.id);
+                  setMyFiles(newFiles);
+                  setSelectedFile(null);
+                }
+              }}
+            >
+              Delete
+            </button>
             <button style={styles.controlButton}
               onClick={() => {
                 if (selectedFile) {
